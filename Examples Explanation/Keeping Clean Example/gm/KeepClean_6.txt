@@ -74,7 +74,7 @@
         },
         {
           "id": "d5c22b85-8e8d-4528-ab81-cb7d87ae5235",
-          "text": "G1: Keep Clean[G2;G3]",
+          "text": "G1: Keep Clean [G2;G3]",
           "type": "istar.Goal",
           "x": 296,
           "y": 126,
