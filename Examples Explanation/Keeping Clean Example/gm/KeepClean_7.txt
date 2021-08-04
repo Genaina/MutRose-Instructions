@@ -56,8 +56,7 @@
           "y": 540,
           "customProperties": {
             "Description": "",
-            "Location": "current_room",
-            "RobotNumber": "1"
+            "Location": "current_room"
           }
         },
         {
