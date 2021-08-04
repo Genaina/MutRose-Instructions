@@ -3,12 +3,33 @@
     (:predicates
         (equipmentok ?r - robot)
         (occupied ?rm - room)
+	(aborted ?r - robot)
     )
     (:functions
         (staphylococcus ?rm - room)
     )
-    (:capabilities organization equipmentsearch)
+    (:capabilities organization equipmentsearch sndmessage)
 
+
+    (:task AbortMission :parameters (?r - robot ?rm - room))
+    (:method abort-mission
+       :parameters (?r - robot ?rm - room)
+       :task (AbortMission ?r ?rm)
+       :precondition (and
+                  (occupied ?rm)
+       )
+       :subtasks (and
+ 	    (msg-to-mgr ?r ?rm)
+	)
+    )
+    (:action msg-to-mgr
+        :parameters (?r - robot ?rm - room)
+        :required-capabilities (sndmessage)
+        :effect (and
+            (aborted ?r)
+        )
+    )
+     
     (:task FindEquipment :parameters (?r - robot ?eqrm - room))
     (:method find-equipment
         :parameters (?r - robot ?eqrm - room)
@@ -25,6 +46,25 @@
         :required-capabilities (equipmentsearch)
         :effect (and
             (equipmentok ?r)
+        )
+    )
+
+    (:task EnterRoom :parameters (?r - robot ?rm - room))
+    (:method enter-room
+       :parameters (?r - robot ?rm - room)
+       :task (EnterRoom ?r ?rm)
+       :precondition (and
+                  (not (occupied ?rm))
+       )
+       :subtasks (and
+ 	    (mark-room ?r ?rm)
+	)
+    )
+    (:action mark-room
+        :parameters (?r - robot ?rm - room)
+        :required-capabilities (sndmessage)
+        :effect (and
+            (occupied ?rm)
         )
     )
 
