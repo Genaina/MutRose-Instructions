@@ -90,8 +90,7 @@
           "y": 317,
           "customProperties": {
             "Description": "",
-            "GoalType": "",
-            "Controls": ""
+            "GoalType": ""
           }
         },
         {
