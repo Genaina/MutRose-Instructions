@@ -79,8 +79,7 @@
           "x": 296,
           "y": 126,
           "customProperties": {
-            "Description": "",
-            "selected": true
+            "Description": ""
           }
         },
         {
