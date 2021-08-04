@@ -67,8 +67,7 @@
           "y": 537,
           "customProperties": {
             "Description": "",
-            "Location": "current_room",
-            "Group": "False"
+            "Location": "current_room"
           }
         },
         {
@@ -130,8 +129,7 @@
           "x": 675,
           "y": 543,
           "customProperties": {
-            "Description": "",
-            "Group": "False"
+            "Description": ""
           }
         },
         {
@@ -141,8 +139,7 @@
           "x": 784,
           "y": 545,
           "customProperties": {
-            "Description": "",
-            "Group": "False"
+            "Description": ""
           }
         },
         {
@@ -152,8 +149,7 @@
           "x": 905,
           "y": 544,
           "customProperties": {
-            "Description": "",
-            "Group": "False"
+            "Description": ""
           }
         },
         {
