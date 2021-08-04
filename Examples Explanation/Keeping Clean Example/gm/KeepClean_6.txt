@@ -20,7 +20,7 @@
             "Description": "",
             "GoalType": "Query",
             "Controls": "rooms : Sequence(Room)",
-            "QueriedProperty": "world_db->select(r:Room | !r.staphylococcus)"
+            "QueriedProperty": "world_db->select(r:Room | !r.staphylococcus > 1)"
           }
         },
         {
@@ -121,7 +121,7 @@
           "y": 411,
           "customProperties": {
             "Description": "",
-            "CreationCondition": "assertion condition \"current_room.is_occupied\""
+            "CreationCondition": "assertion condition \"current_room.occupied\""
           }
         },
         {
