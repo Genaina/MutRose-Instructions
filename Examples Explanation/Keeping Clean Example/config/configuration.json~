@@ -102,6 +102,6 @@
                 "pred": "equipmentok",
                 "arg_sorts": ["robot"]
             }
-        }
+        },
     ]
 }
