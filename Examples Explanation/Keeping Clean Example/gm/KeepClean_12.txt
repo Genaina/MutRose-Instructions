@@ -45,7 +45,8 @@
           "y": 369,
           "customProperties": {
             "Description": "",
-            "CreationCondition": "assertion condition \"not current_room.occupied\""
+            "CreationCondition": "assertion condition \"not current_room.occupied\"",
+            "Group": "False"
           }
         },
         {
