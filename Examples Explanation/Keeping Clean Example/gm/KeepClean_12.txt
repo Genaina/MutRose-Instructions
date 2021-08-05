@@ -118,8 +118,7 @@
           "x": 316,
           "y": 425,
           "customProperties": {
-            "Description": "",
-            "CreationCondition": ""
+            "Description": ""
           }
         },
         {
