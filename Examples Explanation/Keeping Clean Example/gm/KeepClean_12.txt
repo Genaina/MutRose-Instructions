@@ -163,7 +163,8 @@
           "y": 446,
           "customProperties": {
             "Description": "",
-            "Monitors": "current_room"
+            "Monitors": "current_room",
+            "Group": "False"
           }
         },
         {
