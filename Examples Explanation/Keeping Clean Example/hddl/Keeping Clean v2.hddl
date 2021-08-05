@@ -7,7 +7,7 @@
     (:functions
         (staphylococcus ?rm - room)
     )
-    (:capabilities organization equipmentsearch sndmessage)
+    (:capabilities organization equipmentsearch sndmessage sndmessageAbort)
 
     (:task AbortMission :parameters (?r - robot ?rm - room))
     (:method abort-mission
@@ -22,7 +22,7 @@
     )
     (:action msg-to-mgr
         :parameters (?r - robot ?rm - room)
-        :required-capabilities (sndmessage)
+        :required-capabilities (sndmessageAbort)
         :effect ()
     )
      
